@@ -1,0 +1,11 @@
+langchain_community
+sentence_transformers
+pandas
+langchain_ollama
+langchain
+faiss
+pathlib
+streamlit
+requests
+transformers
+vllm
