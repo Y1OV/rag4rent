@@ -28,8 +28,20 @@ pip install -r requirements.txt
 ```python
 cd rag4rent/src/streamlit
 ```
+*4. Запустите сервер vLLM:*
 
-*4. Запустите приложение:*
+```python
+
+vllm serve ai-sage/GigaChat -20B-A3B-instruct
+ --disable-log-requests
+ --trust_remote_code 
+ --dtype bfloat16
+ --max-seq-len 20000
+ --tensor -parallel -size 2
+
+```
+
+*5. Запустите приложение:*
 
 ```python
 streamlit run streamlit_app.py
